@@ -1,0 +1,15 @@
+.profile__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexed{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile__container{
+    max-width: 95%;
+    margin: auto;
+}
