@@ -1,0 +1,48 @@
+.contact__container{
+    display: flex;
+    width: 99%;
+    max-width: 100%;
+    border: 1px solid #333;
+    margin: 0.2em;
+    margin-bottom: 0.4em;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.contact__container:hover{
+    background-color: #333;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.contact__profile_icon,
+.spacer,
+.contact__icons{
+    flex: 1
+}
+
+.contact__profile_icon{
+    font-size: 4em;
+}
+
+.contact__info{
+    flex: 30;
+    overflow: hidden;
+}
+
+.contact__info p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+}
+
+.contact__icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact__icon{
+    font-size: 2em;
+}
