@@ -1,20 +1,13 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Tab1.css';
+import Header from '../components/Header';
 
 const MatchesPage: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Matches</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+      <Header subtitle="Matches"></Header>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
-          </IonToolbar>
-        </IonHeader>
+        
       </IonContent>
     </IonPage>
   );
