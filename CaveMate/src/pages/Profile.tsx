@@ -19,10 +19,11 @@ const ProfilePage: React.FC = () => {
                 <IonInput label="Nationality:" disabled={true} placeholder="Caribbean"></IonInput>
               </IonItem>
               <IonItem>
-                  <IonLabel>Favorite Color</IonLabel>
+                <IonLabel>Favorite Color</IonLabel>
+                <input type="color" name="favoriteColor" id="favoriteColor" />
               </IonItem>
               <IonItem>
-                <IonSelect label="Faculty" labelPlacement="floating" placeholder="---">
+                <IonSelect label="Faculty" placeholder="---">
                   <IonSelectOption value="CCA">Culture, Creative & Performing Arts</IonSelectOption>
                   <IonSelectOption value="H&E">Humanities and Education</IonSelectOption>
                   <IonSelectOption value="LAW">Law</IonSelectOption>
@@ -33,7 +34,7 @@ const ProfilePage: React.FC = () => {
                 </IonSelect>
               </IonItem>
               <IonItem>
-                <IonSelect label="Primary Major" labelPlacement="floating" placeholder='---'>
+                <IonSelect label="Primary Major" placeholder='---'>
                   <IonSelectOption value="CS">Computer Science</IonSelectOption>
                   <IonSelectOption value="BIO">Biology</IonSelectOption>
                 </IonSelect>
