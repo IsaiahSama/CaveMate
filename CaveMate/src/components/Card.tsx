@@ -2,6 +2,7 @@ import { IonIcon } from "@ionic/react";
 import { checkmarkOutline, closeOutline, duplicate, person, personCircle, swapVertical } from "ionicons/icons";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./Card.css"
 
 const Card = () => {
     const [isFront, setIsFront] = useState<Boolean>(true)
@@ -11,16 +12,16 @@ const Card = () => {
             <div className="card__card_front">
                 <div className="card__card_header">
                     <p>Faculty</p>
-                    <IonIcon icon={swapVertical}></IonIcon>
+                    <IonIcon icon={swapVertical} className="card__card_swap"></IonIcon>
                 </div>
                 <div className="card__card_front_main">
-                    <IonIcon icon={closeOutline}></IonIcon>
+                    <IonIcon icon={closeOutline} className="card__card_action_button"></IonIcon>
                     <div className="card__card_front_profile">
-                        <IonIcon icon={personCircle}></IonIcon>
+                        <IonIcon icon={personCircle} className="card__card_front_profile_img"></IonIcon>
                         <strong>John Doe</strong>
                         <p>Cavehillian</p>
                     </div>
-                    <IonIcon icon={checkmarkOutline}></IonIcon>
+                    <IonIcon icon={checkmarkOutline} className="card__card_action_button"></IonIcon>
                 </div>
                 <div className="card__card_front_tags">
                     <span>Smart</span>
@@ -36,7 +37,7 @@ const Card = () => {
             <div className="card__card_back">
                 <div className="card__card_header">
                     <p><strong>John Doe</strong></p>
-                    <IonIcon icon={personCircle}></IonIcon>
+                    <IonIcon icon={personCircle} className="card__card_back_profile_img"></IonIcon>
                 </div>
                 <div className="card__card_back_bio">
                     <p>
@@ -58,7 +59,10 @@ const Card = () => {
         )
     }
 
-    return getBack();
+    return <div className="card">
+        {getFront()}
+
+    </div>
 
     // return isFront ? getFront() : getBack()
 }
