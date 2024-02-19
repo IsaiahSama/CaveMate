@@ -12,7 +12,7 @@ const Card = () => {
             <div className="card__card_front">
                 <div className="card__card_header">
                     <p>Faculty</p>
-                    <IonIcon icon={swapVertical} className="card__card_swap"></IonIcon>
+                    <IonIcon icon={swapVertical} className="card__card_swap" onClick={() => setIsFront(false)}></IonIcon>
                 </div>
                 <div className="card__card_front_main">
                     <IonIcon icon={closeOutline} className="card__card_action_button"></IonIcon>
@@ -38,7 +38,7 @@ const Card = () => {
                 <div className="card__card_header">
                     <p><strong>John Doe</strong></p>
                     <IonIcon icon={personCircle} className="card__card_back_profile_img"></IonIcon>
-                    <IonIcon icon={swapVertical} className="card__card_swap"></IonIcon>
+                    <IonIcon icon={swapVertical} className="card__card_swap" onClick={() => setIsFront(true)}></IonIcon>
                 </div>
                 <div className="card__card_back_bio">
                     <p>
@@ -60,12 +60,11 @@ const Card = () => {
         )
     }
 
-    return <div className="card">
-        {getBack()}
-
-    </div>
-
-    // return isFront ? getFront() : getBack()
+    return (
+        <div className="card">
+            {isFront ? getFront() : getBack()}
+        </div>
+    )
 }
 
 export default Card;
