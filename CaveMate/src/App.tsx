@@ -34,6 +34,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import ChatPage from './pages/Chat';
 
 setupIonicReact();
 
@@ -53,6 +54,9 @@ const App: React.FC = () => (
           </Route>
           <Route path="/profile">
             <ProfilePage />
+          </Route>
+          <Route path="/chat">
+            <ChatPage />
           </Route>
           <Route exact path="/">
             <Redirect to="/home" />
