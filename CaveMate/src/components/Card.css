@@ -6,7 +6,8 @@
     margin: auto;
 }
 
-.card__card_front{
+.card__card_front,
+.card__card_back{
     height: 90%;
     width: 95%;
     margin: auto;
@@ -63,10 +64,17 @@
     overflow: hidden;
 }
 
+.card__card_back_profile_img{
+    font-size: 5em;
+}
+
+.aside{
+    text-align: right;
+}
+
 @media screen and (max-width: 1000px){
     .card{
         max-width: 95%;
         width: 95%;
-
     }
 }

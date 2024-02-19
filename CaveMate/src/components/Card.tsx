@@ -38,6 +38,7 @@ const Card = () => {
                 <div className="card__card_header">
                     <p><strong>John Doe</strong></p>
                     <IonIcon icon={personCircle} className="card__card_back_profile_img"></IonIcon>
+                    <IonIcon icon={swapVertical} className="card__card_swap"></IonIcon>
                 </div>
                 <div className="card__card_back_bio">
                     <p>
@@ -60,7 +61,7 @@ const Card = () => {
     }
 
     return <div className="card">
-        {getFront()}
+        {getBack()}
 
     </div>
 
