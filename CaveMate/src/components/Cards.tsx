@@ -1,12 +1,14 @@
 import React from "react";
 import Card from "./Card";
+import "./Cards.css"
 
 const Cards = () => {
     return (
-        <>
-            <h1>Some Cards Here :D</h1>
-            <Card></Card>
-        </>
+        <div className="cards">
+            <div className="cards__inner">
+                <Card></Card>
+            </div>
+        </div>
     )
 }
 

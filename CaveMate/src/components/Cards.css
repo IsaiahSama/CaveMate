@@ -1,0 +1,16 @@
+.cards{
+    display: flex;
+    height: 100%;
+}
+.cards__inner{
+    height: 70%;
+    width: 60%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1000px){
+    .cards__inner{
+        max-width: 95%;
+        width: 95%;
+    }
+}
